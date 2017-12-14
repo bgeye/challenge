@@ -1,0 +1,43 @@
+/*
+           name: project 001
+    description: words where the number is made by elements
+         author: mario knecht
+           date: 20171214
+*/
+
+*{
+    box-sizing:border-box;
+}
+
+.challenge{
+    /*width:600px;*/
+    display:grid;
+    /*justify-content:center;*/
+    grid-template-columns:auto 500px auto;
+    grid-template-rows: 50px 500px 50px;
+    grid-template-areas:
+    "... header ..."
+    "... main ..."
+    "... footer ...";
+}
+
+.head{
+    grid-area:header;
+    background-color:tomato;
+    padding 5px;
+}
+
+.main{
+    grid-area:main;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b6fdb+0,00aaf9+100 */
+  background: #2b6fdb; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #2b6fdb 0%, #00aaf9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6fdb', endColorstr='#00aaf9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.footer{
+    grid-area:footer;
+    padding:5px;
+}
