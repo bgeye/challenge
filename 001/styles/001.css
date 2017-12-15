@@ -5,8 +5,11 @@
            date: 20171214
 */
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
 *{
     box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .challenge{
@@ -14,7 +17,7 @@
     display:grid;
     /*justify-content:center;*/
     grid-template-columns:auto 500px auto;
-    grid-template-rows: 50px 500px 50px;
+    grid-template-rows: 50px auto 50px;
     grid-template-areas:
     "... header ..."
     "... main ..."
@@ -23,13 +26,24 @@
 
 .head{
     grid-area:header;
-    background-color:tomato;
-    padding 5px;
+    text-align:center;
+    color:lightgrey;
+}
+
+.head__title {
+    padding-top: 11px;
+    margin: 0;
 }
 
 .main{
-    grid-area:main;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b6fdb+0,00aaf9+100 */
+  grid-area:main;
+  display:flex;
+  flex-wrap:wrap;
+  align-item:center;
+  color:#ffffff;
+  padding: 111px 0;
+  justify-content:center;
+  /*gradient*/
   background: #2b6fdb; /* Old browsers */
   background: -moz-linear-gradient(45deg, #2b6fdb 0%, #00aaf9 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%); /* Chrome10-25,Safari5.1-6 */
@@ -37,7 +51,82 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6fdb', endColorstr='#00aaf9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.number{
+    flex-basis:50%;
+    display:flex;
+    height:100px
+}
+
+
+
+.main__bigword{
+    flex-basis:100%;
+    font-size:5.4em;
+    font-weight:700;
+    letter-spacing:-2px;
+    padding-left:147px;
+}
+
+.main__smallword{
+    flex-basis:100%;
+    font-size:1.75em;
+    font-weight:300;
+    padding-left:153px;
+}
+
+
+
+.one{
+    position:relative;
+    width:53px;
+}
+
+.one__vertical{
+     position:absolute;
+     left:30px;
+     width:23px;
+     height:100px;
+     z-index:5;
+     background-color:#ffffff;
+     box-shadow:12px 0 15px -7px grey, -12px 0 8px -9px grey;
+}
+
+.one__aslant{
+    position:absolute;
+    left:8px;
+    top:-1px;
+    width:20px;
+    height:40px;
+    z-index:4;
+    background-color:#ffffff;
+    transform:rotate(60deg);
+}
+
+.two__circle{
+    position:absolute;
+    left:49px;
+    border:20px solid #ffffff;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    box-shadow:12px 0 15px -7px grey, -12px 0 8px -9px grey;
+    z-index:3;
+}
+
+.three__circle{
+    position:absolute;
+    left:139px;
+    border:20px solid #ffffff;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    z-index:2;
+}
+
+
 .footer{
     grid-area:footer;
     padding:5px;
+    color:lightgrey;
+    text-align:center;
 }
