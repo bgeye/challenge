@@ -1,0 +1,64 @@
+/*
+           name: project 000
+    description: description
+         author: mario knecht
+           date: yyyymmdd
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.challenge{
+    /*width:600px;*/
+    display:grid;
+    /*justify-content:center;*/
+    grid-template-columns:auto 500px auto;
+    grid-template-rows: 50px /*auto*/ 500px 50px;
+    grid-template-areas:
+    "... header ..."
+    "... main ..."
+    "... footer ...";
+}
+
+.head{
+    grid-area:header;
+    text-align:center;
+    color:lightgrey;
+}
+
+.head__title {
+    padding-top: 11px;
+    margin: 0;
+}
+
+.main{
+  grid-area:main;
+  display:flex;
+  flex-wrap:wrap;
+  align-item:center;
+  color:#ffffff;
+  padding: 111px 0;
+  justify-content:center;
+  background-color: turquoise;
+
+  /*gradient*/
+
+  /*background: #2b6fdb;*/ /* Old browsers */
+  /*background: -moz-linear-gradient(45deg, #2b6fdb 0%, #00aaf9 100%); *//* FF3.6-15 */
+  /*background: -webkit-linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%);*/ /* Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%); *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6fdb', endColorstr='#00aaf9',GradientType=1 );*/ /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+.footer{
+    grid-area:footer;
+    padding:5px;
+    color:lightgrey;
+    text-align:center;
+}
