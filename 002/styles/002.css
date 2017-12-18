@@ -39,10 +39,9 @@
   grid-area:main;
   display:flex;
   flex-wrap:wrap;
-  align-item:center;
   color:#ffffff;
-  padding: 111px 0;
   justify-content:center;
+  align-content:center;
   background-color: turquoise;
 
   /*gradient*/
@@ -55,6 +54,33 @@
 
 }
 
+.nav-btn{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:50px;
+    height:35px;
+    cursor:pointer;
+}
+
+
+.nav-btn__linetop{
+    height:5px;
+    border-radius:10px;
+    background-color:#ffffff;
+}
+
+.nav-btn__linecenter{
+    height:5px;
+    border-radius:10px;
+    background-color:#ffffff;
+}
+
+.nav-btn__linebottom{
+    height:5px;
+    border-radius:10px;
+    background-color:#ffffff;
+}
 
 .footer{
     grid-area:footer;
