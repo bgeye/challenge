@@ -74,24 +74,28 @@
     border-radius:10px;
     background-color:#ffffff;
     box-shadow:0 0 0.5em #696969;
-    transition:ease 2s;
+    transition:ease 0.5s;
 
 }
 
-.nav-btn:hover .nav-btn__linetop{
-    top:43%;
-    transform:rotate(45deg);
-}
+.nav-btn__linetop.move{
+     top:43%;
+ }
+
+ .nav-btn__linetop.rotate{
+     transform:rotate(45deg);
+     box-shadow:0 0 0.1em #696969;
+ }
 
 .nav-btn__linecenter{
     height:5px;
     border-radius:10px;
     background-color:#ffffff;
     box-shadow:0 0 0.5em #696969;
-    transition:ease 2s;
+    transition:ease 0.5s;
 }
 
-.nav-btn:hover .nav-btn__linecenter{
+.nav-btn__linecenter.move{
     opacity:0;
 }
 
@@ -104,12 +108,16 @@
     border-radius:10px;
     background-color:#ffffff;
     box-shadow:0 0 0.5em #696969;
-    transition:ease 2s;
+    transition:ease 0.5s;
 }
 
-.nav-btn:hover .nav-btn__linebottom{
+.nav-btn__linebottom.move{
     bottom:43%;
+}
+
+.nav-btn__linebottom.rotate{
     transform:rotate(135deg);
+    box-shadow:0 0 0.5em #696969;
 }
 
 .footer{
