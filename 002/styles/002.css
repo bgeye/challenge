@@ -74,7 +74,7 @@
     border-radius:10px;
     background-color:#ffffff;
     box-shadow:0 0 0.5em #696969;
-    transition:ease 0.5s;
+    transition:linear 0.2s;
 
 }
 
@@ -92,7 +92,7 @@
     border-radius:10px;
     background-color:#ffffff;
     box-shadow:0 0 0.5em #696969;
-    transition:ease 0.5s;
+    transition:linear 0.2s;
 }
 
 .nav-btn__linecenter.move{
@@ -108,7 +108,7 @@
     border-radius:10px;
     background-color:#ffffff;
     box-shadow:0 0 0.5em #696969;
-    transition:ease 0.5s;
+    transition:linear 0.2s;
 }
 
 .nav-btn__linebottom.move{
