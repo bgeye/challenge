@@ -1,4 +1,7 @@
 
+
+
+
 setCloseBtn();
 
 function setCloseBtn(){
@@ -8,43 +11,52 @@ function setCloseBtn(){
 }
 
 function movebtn(){
-    console.log('clicked');
+
+    var btn = document.getElementsByClassName('nav-btn');
+    btn[0].removeEventListener('click',movebtn);
     var lines = document.querySelectorAll('.nav-btn__linetop, .nav-btn__linecenter, .nav-btn__linebottom');
-    var linemax = lines.length -1;
-    //console.log(lines[0].className += ' move');
-    //console.log(lines.length);
+
     for(var i = 0;i < lines.length;i++){
         lines[i].className += ' move';
     }
-    //lines[linemax].addEventListener('transitionend',crossLines);
+
     setTimeout(function(){
         crossLines();
     },500);
 
-    var btn = document.getElementsByClassName('nav-btn');
-    btn[0].removeEventListener('click',movebtn);
+
 }
 
 function crossLines(){
     var lines = document.querySelectorAll('.nav-btn__linetop, .nav-btn__linebottom');
-    var lastline = lines.length-1;
     console.log('lines to add openclass: '+ lines.length);
     console.log(lines);
     for(var i = 0; i < lines.length;i++){
+            console.log('in loop');
 
-        lines[i].className += ' rotate';
+            if((i + 1)==(lines.length)){
+                console.log('lastline');
+                var lastline = lines[i];
+                lines[i].addEventListener('transitionend',setOpenClass(lastline));
+                lines[i].className += ' rotate';
+
+            }else{
+            console.log('first Line');
+            lines[i].className += ' rotate';
+            }
+
     }
 
-    if(lines[lastline]){
-        console.log('lastLine: '+lines[lastline]);
-        lines[lastline].addEventListener('transitionend',setOpenClass);
 
-    }
 
 }
 
-function setOpenClass(){
+function setOpenClass(line){
+    var lines = line;
+    console.log('lines in openclass: '+lines);
+    lines.removeEventListener('transitionend',setOpenClass);
     console.log('transition ends here.');
+
     var btn = document.getElementsByClassName('nav-btn');
     btn[0].className += ' open';
     var openbtn = document.getElementsByClassName('open');
@@ -60,12 +72,18 @@ function removeClass(){
     while(lines.length){
         lines[0].classList.remove('rotate');
     }
-    var lines = document.getElementsByClassName('move');
-    while(lines.length){
-        lines[0].classList.remove('move');
-    }
+
+    setTimeout(function(){
+        var lines = document.getElementsByClassName('move');
+        while(lines.length){
+            lines[0].classList.remove('move');
+        }
+    },500);
+
+
 
     var openbtn = document.getElementsByClassName('open');
     openbtn[0].removeEventListener('click',removeClass);
+    openbtn[0].classList.remove('open');
     setCloseBtn();
 }
