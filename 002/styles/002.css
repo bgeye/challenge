@@ -1,0 +1,126 @@
+/*
+           name: project 000
+    description: description
+         author: mario knecht
+           date: yyyymmdd
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.challenge{
+    /*width:600px;*/
+    display:grid;
+    /*justify-content:center;*/
+    grid-template-columns:auto 500px auto;
+    grid-template-rows: 50px /*auto*/ 500px 50px;
+    grid-template-areas:
+    "... header ..."
+    "... main ..."
+    "... footer ...";
+}
+
+.head{
+    grid-area:header;
+    text-align:center;
+    color:lightgrey;
+}
+
+.head__title {
+    padding-top: 11px;
+    margin: 0;
+}
+
+.main{
+  grid-area:main;
+  display:flex;
+  flex-wrap:wrap;
+  color:#ffffff;
+  justify-content:center;
+  align-items:center;
+  background-color: turquoise;
+
+  /*gradient*/
+
+  /*background: #2b6fdb;*/ /* Old browsers */
+  /*background: -moz-linear-gradient(45deg, #2b6fdb 0%, #00aaf9 100%); *//* FF3.6-15 */
+  /*background: -webkit-linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%);*/ /* Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%); *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6fdb', endColorstr='#00aaf9',GradientType=1 );*/ /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.nav-btn{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:80px;
+    height:52px;
+    cursor:pointer;
+}
+
+.nav-btn__linetop{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:8px;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow:0 0 0.5em #696969;
+    transition:linear 0.2s;
+}
+
+.nav-btn__linetop.move{
+     top:43%;
+ }
+
+ .nav-btn__linetop.rotate{
+     transform:rotate(45deg);
+     box-shadow:0 0 0.1em #696969;
+ }
+
+.nav-btn__linecenter{
+    height:8px;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow:0 0 0.5em #696969;
+    transition:linear 0.2s;
+}
+
+.nav-btn__linecenter.move{
+    opacity:0;
+}
+
+.nav-btn__linebottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:8px;
+    width:100%;
+    border-radius:10px;
+    background-color:#ffffff;
+    box-shadow:0 0 0.5em #696969;
+    transition:linear 0.2s;
+}
+
+.nav-btn__linebottom.move{
+    bottom:43%;
+}
+
+.nav-btn__linebottom.rotate{
+    transform:rotate(135deg);
+    box-shadow:0 0 0.5em #696969;
+}
+
+.footer{
+    grid-area:footer;
+    padding:5px;
+    color:lightgrey;
+    text-align:center;
+}
