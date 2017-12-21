@@ -41,7 +41,7 @@
   flex-wrap:wrap;
   color:#ffffff;
   justify-content:center;
-  align-content:center;
+  align-items:center;
   background-color: turquoise;
 
   /*gradient*/
