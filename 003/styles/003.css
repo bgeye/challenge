@@ -55,6 +55,30 @@
 
 }
 
+.pyramid__east{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 50px solid #ffffff;
+    z-index:4;
+}
+
+.pyramid__west{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid grey;
+    z-index:5;
+}
+
 .sky{
     position:absolute;
     top:0;
