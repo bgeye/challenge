@@ -87,40 +87,15 @@
     z-index:110;
 }
 
-/*
-.sun::after{
-    animation: yAxis 2.5s infinite ease-out;
-}*/
-
+/*source
+  http://www.useragentman.com/blog/2013/03/03/animating-circular-paths-using-css3-transitions/
+*/
 /*horizontal*/
 @keyframes xAxis{
         from { -webkit-transform: rotate(0deg) translateX(230px) rotate(0deg); }
         to   { -webkit-transform: rotate(360deg) translateX(230px) rotate(-360deg); }
 }
-/*
-    50%{
-        animation-timing-function: ease-in;
-        transform: translateX(500px);
 
-
-    }
-
-}*/
-
-/*vertical*/
-
-/*
-@keyframes yAxis{
-    50%{
-        animation-timing-function: ease-out;
-        transform: translateY(500px);
-
-    }
-
-
-
-
-}*/
 
 .footer{
     grid-area:footer;
