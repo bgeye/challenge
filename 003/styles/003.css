@@ -55,28 +55,42 @@
 
 }
 
+
+
 .pyramid__east{
-    position:absolute;
-    top:50%;
-    left:50%;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 50px solid #ffffff;
-    z-index:4;
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    width: 200px;
+    height: 150px;
+    background-color: #ffffff;
+    -webkit-clip-path: polygon(50% 0%, 0 100%, 68% 100%);
+    clip-path: polygon(50% 0%, 0 100%, 68% 100%);
+    z-index: 5;
 }
 
 .pyramid__west{
-    position:absolute;
-    top:50%;
-    left:50%;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid grey;
-    z-index:5;
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    width: 200px;
+    height: 150px;
+    background-color: lightgray;
+    -webkit-clip-path: polygon(50% 0%, 62% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 62% 100%, 100% 100%);
+    z-index: 4;
+}
+
+.pyramid__shadow{
+    position: absolute;
+    top: 70%;
+    left: 36%;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.3);
+    -webkit-clip-path: polygon(100% 100%, 12% 0, 83% 0);
+    clip-path: polygon(100% 100%, 12% 0, 83% 0);
+    z-index: 6;
 }
 
 .sky{
@@ -99,6 +113,7 @@
     z-index:2;
 }
 
+/*
 .sun{
     position:absolute;
     bottom:90px;
@@ -109,17 +124,19 @@
     border-radius:50%;
     background-color:yellow;
     z-index:110;
-}
+}*/
 
 /*source
   http://www.useragentman.com/blog/2013/03/03/animating-circular-paths-using-css3-transitions/
 */
 /*horizontal*/
+
+/*
 @keyframes xAxis{
         from { -webkit-transform: rotate(0deg) translateX(230px) rotate(0deg); }
         to   { -webkit-transform: rotate(360deg) translateX(230px) rotate(-360deg); }
 }
-
+*/
 
 .footer{
     grid-area:footer;
