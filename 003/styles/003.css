@@ -163,13 +163,37 @@
 .pyramid__shadow{
     position: absolute;
     top: 70%;
-    left: 36%;
-    width: 200px;
+    left: 26%;
+    width: 280px;
     height: 150px;
     background-color: rgba(0,0,0,0.3);
-    -webkit-clip-path: polygon(100% 100%, 12% 0, 83% 0);
-    clip-path: polygon(100% 100%, 12% 0, 83% 0);
+    -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
+    clip-path: polygon(76% 0, 5% 0, 100% 100%);
     z-index: 6;
+    animation:follow 16s infinite linear;
+}
+
+@keyframes follow{
+    0%{
+       -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
+       clip-path: polygon(76% 0, 5% 0, 100% 100%);
+    }
+
+    25%{
+       -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
+       clip-path: polygon(76% 0, 5% 0, 50% 100%);
+    }
+
+    50%{
+        -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
+                   clip-path: polygon(76% 0, 5% 0, 5% 100%);
+    }
+
+    100%{
+           -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
+           clip-path: polygon(76% 0, 5% 0, 5% 100%);
+        }
+
 }
 
 
