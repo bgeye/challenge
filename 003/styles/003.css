@@ -39,14 +39,13 @@
   grid-area:main;
   display:flex;
   flex-wrap:wrap;
-  align-item:center;
   color:#ffffff;
   justify-content:center;
   background-color: #000000;
 }
 
 
-.mask{
+.pyramid{
     position:relative;
     height:100%;
     width:100%;
@@ -55,7 +54,7 @@
 }
 
 
-.night{
+.pyramid__night{
     position:absolute;
     top:0;
     left:0;
@@ -160,6 +159,7 @@
     }
 }
 
+/*https://bennettfeely.com/clippy/*/
 .pyramid__shadow{
     position: absolute;
     top: 70%;
@@ -197,7 +197,7 @@
 }
 
 
-.sky{
+.pyramid__sky{
     position:absolute;
     top:0;
     left:0;
@@ -207,7 +207,7 @@
     z-index:3;
 }
 
-.desert{
+.pyramid__desert{
     position:absolute;
     bottom:0;
     left:0;
@@ -218,7 +218,7 @@
 }
 
 
-.sun{
+.pyramid__sun{
     position:absolute;
     bottom:90px;
     left:205px;
