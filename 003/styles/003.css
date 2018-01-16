@@ -101,7 +101,7 @@
     -webkit-clip-path: polygon(50% 0%, 62% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 62% 100%, 100% 100%);
     z-index: 4;
-    animation: colorwest  8s infinite linear;
+    animation: colorwest  16s infinite linear;
 }
 
 @keyframes colorwest{
@@ -109,9 +109,22 @@
         background-color: lightgray;
     }
 
+    25%{
+        background-color: lightgray;
+    }
+
+    40%{
+       background-color: #ffffff;
+    }
+
+
+    60%{
+            background-color: lightgray;
+    }
+
     100%{
-            background-color: #ffffff;
-        }
+            background-color: lightgray;
+    }
 
     /*
     50%{
