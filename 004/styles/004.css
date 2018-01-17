@@ -48,14 +48,32 @@
     bottom:0;
     right:0;
     z-index:1;
-    width:150px;
-    height:150px;
+    width:0;
+    height:0;
     border-radius:50%;
     background-color:#ffffff;
     -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -o-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -webkit-animation: circLarge 3s infinite ease-out alternate;
+    -moz-animation:    circLarge 3s infinite ease-out alternate;
+    -o-animation:      circLarge 3s infinite ease-out alternate;
+    animation:         circLarge 3s infinite ease-out alternate;
 }
+
+@keyframes circLarge{
+    from{
+        width:0;
+        height:0;
+    }
+    to{
+        width:150px;
+        height:150px;
+    }
+}
+
+
 
 .circle__medium{
     margin:auto;
@@ -71,7 +89,23 @@
     background-color:#ffffff;
     -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -o-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -webkit-animation: circMedium 3s 2s infinite ease-out alternate;
+    -moz-animation:    circMedium 3s 2s infinite ease-out alternate;
+    -o-animation:      circMedium 3s 2s infinite ease-out alternate;
+    animation:         circMedium 3s 2s infinite ease-out alternate;
+}
+
+@keyframes circMedium{
+    from{
+        width:0;
+        height:0;
+    }
+    to{
+        width:100px;
+        height:100px;
+    }
 }
 
 
@@ -89,7 +123,24 @@
     background-color:#ffffff;
     -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -o-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -webkit-animation: circSmall 3s 2s infinite ease-out alternate;
+    -moz-animation:    circSmall 3s 2s infinite ease-out alternate;
+    -o-animation:      circSmall 3s 2s infinite ease-out alternate;
+    animation:         circSmall 3s 2s infinite ease-out alternate;
+}
+
+
+@keyframes circSmall{
+    from{
+        width:0;
+        height:0;
+    }
+    to{
+        width:50px;
+        height:50px;
+    }
 }
 
 
