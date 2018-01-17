@@ -13,11 +13,9 @@
 }
 
 .challenge{
-    /*width:600px;*/
     display:grid;
-    /*justify-content:center;*/
     grid-template-columns:auto 500px auto;
-    grid-template-rows: 50px /*auto*/ 500px 50px;
+    grid-template-rows: 50px 500px 50px;
     grid-template-areas:
     "... header ..."
     "... main ..."
@@ -35,24 +33,63 @@
     margin: 0;
 }
 
-.main{
+.circle{
+  position:relative;
   grid-area:main;
-  display:flex;
-  flex-wrap:wrap;
-  align-item:center;
-  color:#ffffff;
   padding: 111px 0;
-  justify-content:center;
-  background-color: gainsboro;
+  background-color: hotpink;
+}
 
-  /*gradient*/
+.circle__large{
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:1;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background-color:#ffffff;
+    -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+}
 
-  /*background: #2b6fdb;*/ /* Old browsers */
-  /*background: -moz-linear-gradient(45deg, #2b6fdb 0%, #00aaf9 100%); *//* FF3.6-15 */
-  /*background: -webkit-linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%);*/ /* Chrome10-25,Safari5.1-6 */
-  /*background: linear-gradient(45deg, #2b6fdb 0%,#00aaf9 100%); *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6fdb', endColorstr='#00aaf9',GradientType=1 );*/ /* IE6-9 fallback on horizontal gradient */
+.circle__medium{
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:2;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color:#ffffff;
+    -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+}
 
+
+.circle__small{
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:3;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:#ffffff;
+    -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
 }
 
 
