@@ -56,21 +56,38 @@
     -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     -o-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
-    -webkit-animation: circLarge 3s infinite ease-out alternate;
-    -moz-animation:    circLarge 3s infinite ease-out alternate;
-    -o-animation:      circLarge 3s infinite ease-out alternate;
-    animation:         circLarge 3s infinite ease-out alternate;
+    -webkit-animation: circLarge 6s infinite ease-out alternate;
+    -moz-animation:    circLarge 6s infinite ease-out alternate;
+    -o-animation:      circLarge 6s infinite ease-out alternate;
+    animation:         circLarge 6s infinite ease-out alternate;
 }
 
 @keyframes circLarge{
-    from{
+    0%{
         width:0;
         height:0;
     }
-    to{
+
+    10%{
+            width:0;
+            height:0;
+        }
+
+    30%{
         width:150px;
         height:150px;
     }
+
+    70%{
+        width:150px;
+        height:150px;
+    }
+
+    90%{
+        width:0;
+        height:0;
+    }
+
 }
 
 
@@ -91,10 +108,10 @@
     -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     -o-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
-    -webkit-animation: circMedium 3s 2s infinite ease-out alternate;
+   /* -webkit-animation: circMedium 3s 2s infinite ease-out alternate;
     -moz-animation:    circMedium 3s 2s infinite ease-out alternate;
     -o-animation:      circMedium 3s 2s infinite ease-out alternate;
-    animation:         circMedium 3s 2s infinite ease-out alternate;
+    animation:         circMedium 3s 2s infinite ease-out alternate;*/
 }
 
 @keyframes circMedium{
@@ -125,10 +142,10 @@
     -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     -o-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
-    -webkit-animation: circSmall 3s 2s infinite ease-out alternate;
+ /*   -webkit-animation: circSmall 3s 2s infinite ease-out alternate;
     -moz-animation:    circSmall 3s 2s infinite ease-out alternate;
     -o-animation:      circSmall 3s 2s infinite ease-out alternate;
-    animation:         circSmall 3s 2s infinite ease-out alternate;
+    animation:         circSmall 3s 2s infinite ease-out alternate;*/
 }
 
 
