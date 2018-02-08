@@ -75,6 +75,10 @@
     background-color:orange;
 }
 
+.main__fill{
+    display:none;
+}
+
 .main__aside{
 
     /*inherit height from main__content*/
@@ -90,7 +94,33 @@
 
 .footer{
     grid-area:footer;
-    padding:5px;
+    padding:5px 0;
     color:lightgrey;
     text-align:center;
+}
+
+.footer__name{
+
+    display:block
+}
+
+.footer__btn{
+
+    background-color: gainsboro; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.footer__btn:hover {
+
+    background-color: #e7e7e7;
+
 }
