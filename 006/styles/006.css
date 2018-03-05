@@ -133,10 +133,10 @@ shapes: https://css-tricks.com/examples/ShapesOfCSS/
         border-left:60px solid transparent;
         border-right:60px solid transparent;
         border-bottom:57px solid #a50045;*/
-            -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
-            clip-path: polygon(76% 0, 5% 0, 100% 100%);
-            background-color:#a50045;
-        position:absolute;
-        top:-30px;
+        -webkit-clip-path: polygon(68% 11px, -1% 24px, 62% 16% );
+        clip-path: polygon(68% 11px, -1% 24px, 62% 16%);
+        background-color: #a50045;
+        position: absolute;
+        top: -24px;
 
 }
