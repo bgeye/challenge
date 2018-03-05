@@ -1,0 +1,142 @@
+/*
+           name: project 000
+    description: description
+         author: mario knecht
+           date: yyyymmdd
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+*{
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.challenge{
+    /*width:600px;*/
+    display:grid;
+    /*justify-content:center;*/
+    grid-template-columns:auto 500px auto;
+    grid-template-rows: 50px /*auto*/ 500px 50px;
+    grid-template-areas:
+    "... header ..."
+    "... main ..."
+    "... footer ...";
+}
+
+.head{
+    grid-area:header;
+    text-align:center;
+    color:lightgrey;
+}
+
+.head__title {
+    padding-top: 11px;
+    margin: 0;
+}
+
+.main{
+  display:grid; /*only for 006 project*/
+  grid-area:main;
+  display:flex;
+  flex-wrap:wrap;
+  align-item:center;
+  color:#ffffff;
+  /*padding: 111px 0;*/
+  justify-content:center;
+  background-color: gainsboro;
+}
+
+
+.footer{
+    grid-area:footer;
+    padding:5px;
+    color:lightgrey;
+    text-align:center;
+}
+
+
+
+/*---------------------------------content------------------------------------*/
+
+/*
+colors
+red:        #a50045
+antrazith:  #1a2a39
+white:      #ffffff
+
+shapes: https://css-tricks.com/examples/ShapesOfCSS/
+
+*/
+
+.main_relief{
+    height:250px;
+    width:100%;
+    position:relative;
+    border-bottom:1px dotted red;
+}
+
+.main__first{
+
+
+}
+
+.first__top{
+
+    width:0;
+    height:0;
+    border-left:60px solid transparent;
+    border-right:60px solid transparent;
+    border-bottom:57px solid #1a2a39;
+    position:absolute;
+    bottom:0;
+    left:15px;
+}
+
+.first__center{
+     border-style: solid;
+     border-color: transparent transparent #1a2a39 transparent;
+     border-width: 0 10px 25px 10px;
+     height: 0;
+     width: 150px;
+     position:absolute;
+     bottom:5px;
+}
+
+.first__bottom{
+     width:130px;
+     height:10px;
+     background-color:#1a2a39;
+     position:absolute;
+     bottom:0;
+     left:10px;
+}
+
+
+.logo__center{
+
+    width:50px;
+    height:50px;
+    background-color:#a50045;
+    color:#ffffff;
+    text-align:center;
+    font-size:0.5rem;
+    padding-top:15px;
+    position:relative;
+}
+
+.logo__top{
+        width: 280px;
+        height: 150px;
+        /*width:0;
+        height:0;
+        border-left:60px solid transparent;
+        border-right:60px solid transparent;
+        border-bottom:57px solid #a50045;*/
+            -webkit-clip-path: polygon(76% 0, 5% 0, 100% 100%);
+            clip-path: polygon(76% 0, 5% 0, 100% 100%);
+            background-color:#a50045;
+        position:absolute;
+        top:-30px;
+
+}
