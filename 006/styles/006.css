@@ -151,9 +151,12 @@ shapes: https://css-tricks.com/examples/ShapesOfCSS/
 
 }
 
+
+/*TOWER LEFT*/
+
 .main__towerleft{
    position:absolute;
-   width:30%;
+   width:14%;
    height:50%;
    bottom:0;
    left:150px;
@@ -166,14 +169,17 @@ shapes: https://css-tricks.com/examples/ShapesOfCSS/
     height:100%;
 }
 
-.towerleft__circlesmall{
-    width:5px;
-    height:5px;
-    border-radius:50%;
-    background-color:#1a2a39;
-}
+/*.towerleft__circlesmall{*/
+    /*width:5px;*/
+    /*height:5px;*/
+    /*border-radius:50%;*/
+    /*background-color:#1a2a39;*/
+/*}*/
 
 .towerleft__trapezoidsmall{
+    position: absolute;
+    left: 52px;
+    bottom: 61px;
     border-bottom: 19px solid #1a2a39;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
@@ -182,7 +188,9 @@ shapes: https://css-tricks.com/examples/ShapesOfCSS/
 }
 
 .towerleft__circlebig{
-       display:block;
+       position: absolute;
+       left: 47px;
+       bottom: 48px;
        width: 17px;
        height: 23px;
        background-color: #1a2a39;
@@ -192,11 +200,103 @@ shapes: https://css-tricks.com/examples/ShapesOfCSS/
 
 
 .towerleft__tower{
-    width:10px;
+    position: absolute;
+    bottom: 0;
+    left: 49px;
+    width:13px;
     height:50px;
     background-color:#1a2a39;
 }
 
+
+.main__fifth{
+    position:absolute;
+    bottom:0px;
+    left: 278px;
+    width: 79px;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #1a2a39 transparent;
+    border-width: 0 10px 38px 10px;
+}
+
+.main__sixth{
+    position:absolute;
+    bottom:0px;
+    left: 329px;
+    width: 79px;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #1a2a39 transparent;
+    border-width: 0 10px 44px 10px;
+}
+
+.main__seventh{
+    position:absolute;
+    bottom:0px;
+    left: 387px;
+    width: 79px;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #1a2a39 transparent;
+    border-width: 0 10px 48px 10px;
+}
+
+
+/*TOWER RIGHT*/
+.main__towerright{
+    position:absolute;
+    width:14%;
+    height:50%;
+    bottom: 20px;
+    right: 55px;
+    border:1px dotted red;
+}
+
+.towerright__container{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+/*.towerleft__circlesmall{*/
+/*width:5px;*/
+/*height:5px;*/
+/*border-radius:50%;*/
+/*background-color:#1a2a39;*/
+/*}*/
+
+.towerright__trapezoidsmall{
+    position: absolute;
+    left: 52px;
+    bottom: 61px;
+    border-bottom: 19px solid #1a2a39;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0;
+    width: 8px;
+}
+
+.towerright__circlebig{
+    position: absolute;
+    left: 47px;
+    bottom: 48px;
+    width: 17px;
+    height: 23px;
+    background-color: #1a2a39;
+    /*-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;*/
+    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+
+.towerright__tower{
+    position: absolute;
+    bottom: 0;
+    left: 49px;
+    width:13px;
+    height:50px;
+    background-color:#1a2a39;
+}
 
 
 /*--------------LOGO---------------*/
